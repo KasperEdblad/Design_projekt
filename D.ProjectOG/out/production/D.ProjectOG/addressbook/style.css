@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+
+
+.root{
+    -fx-font-family: "Comfortaa", sans-serif;
+    -fx-background-color: #eeeeee;
+    -fx-text-fill: #062049
+}
+
+.breadCrumb_Content{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+
+}
+
+.breadCrumb_Buttons:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+
+}
+
+#breadcrumb_Background{
+    -fx-background-color: #062049;
+}
+
+.NavBar{
+    -fx-background-color: #062049;
+    -fx-text-fill: white;
+}
+
+.NavBar_buttons{
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-weight: 700;
+
+}
+
+#account_Button{
+    -fx-background-color: #3DA8D6;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+}
+#account_Button:hover{
+    -fx-background-color: #70bfe0;
+}
+
+#shoppingCart_Button{
+    -fx-background-color: #212121;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+}
+#shoppingCart_Button:hover{
+    -fx-background-color: #303030;
+}
+
+#NavNar_Background{
+    -fx-background-color: #062049;
+}
+
+#search_Bar{
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent;
+    -fx-font-size: 18;
+    -fx-background-radius: 28px;
+}
+
+#NavBar_Mark{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 2px 2px 0px 0px;
+}
+
+#back_Button{
+    -fx-background-color: #062049;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 30px;
+    -fx-font-size: 20;
+    -fx-cursor: hand;
+}
+
+#back_Button:hover{
+    -fx-background-color: #1c4380;
+}
+
+#din_Varukorg{
+    -fx-font-weight: 700;
+}
+
+.summary{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 25px;
+}
+
+#summering_label{
+    -fx-font-weight: 700;
+}
+
+#sum_of_costs{
+    -fx-font-weight: 700;
+    -fx-font-size: 22;
+}
+
+
+#shopping_Cart_Continue{
+    -fx-background-color: #062049;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+    -fx-font-size: 25;
+    -fx-font-weight: 700;
+}
+
+#shopping_Cart_Continue:hover {
+    -fx-background-color: #1c4380;
+}
+
+#imat_Button{
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+}
+
+.user_Data_Fields{
+    -fx-background-radius: 0px;
+    -fx-background-color: transparent;
+    -fx-border-color: #062049;
+    -fx-border-width: 1px;
+    -fx-font-size: 22;
+    -fx-font-family: Arial;
+
+}
+
+.user_Data_Headers{
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 20;
+}
+
+.user_data{
+    -fx-font-weight: 700;
+}

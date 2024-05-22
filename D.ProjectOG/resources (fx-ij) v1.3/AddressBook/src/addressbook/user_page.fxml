@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1440.0"  xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.AddressBookController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="159.0" prefWidth="1440.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane id="NavBar_Background" prefHeight="67.0" prefWidth="1440.0" styleClass="NavBar">
+                     <children>
+                        <Button layoutX="395.0" layoutY="20.0" mnemonicParsing="false" onAction="#to_main_page" styleClass="NavBar_buttons" text="Handla Online" />
+                        <Button contentDisplay="CENTER" layoutX="610.0" layoutY="20.0" mnemonicParsing="false" styleClass="NavBar_buttons" stylesheets="@style.css" text="Butiker och erbjudanden" />
+                        <Button layoutX="929.0" layoutY="20.0" mnemonicParsing="false" styleClass="NavBar_buttons" text="Recept" />
+                        <Pane id="NavBar_Mark" layoutX="402.0" layoutY="58.0" prefHeight="4.0" prefWidth="150.0" stylesheets="@style.css" />
+                        <Pane id="NavBar_Mark2" layoutX="612.0" layoutY="58.0" prefHeight="4.0" prefWidth="255.0" stylesheets="@style.css" />
+                        <Pane id="NavBar_Mark3" layoutX="932.0" layoutY="58.0" prefHeight="4.0" prefWidth="85.0" stylesheets="@style.css" />
+                        <ImageView fitHeight="53.0" fitWidth="130.0" layoutX="70.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/iMatLogga.png" />
+                           </image>
+                        </ImageView>
+                        <Button id="imat_Button" layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#to_main_page" prefHeight="59.0" prefWidth="124.0" styleClass="NavBar" stylesheets="@style.css">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button id="shoppingCart_Button" layoutX="1276.0" layoutY="11.0" mnemonicParsing="false" onAction="#to_shopping_cart" prefHeight="45.0" prefWidth="115.0" styleClass="NavBar" stylesheets="@style.css" text="Varukorg">
+                           <padding>
+                              <Insets left="28.0" />
+                           </padding>
+                        </Button>
+                        <Button id="account_Button" layoutX="1157.0" layoutY="15.0" mnemonicParsing="false" onAction="#to_account" prefHeight="40.0" prefWidth="90.0" styleClass="NavBar" stylesheets="@style.css" text="Konto">
+                           <padding>
+                              <Insets left="28.0" />
+                           </padding>
+                        </Button>
+                        <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="1165.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/användare2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1286.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/varukorg2.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+                  <Pane layoutY="84.0" prefHeight="49.0" prefWidth="1440.0">
+                     <children>
+                        <TextField id="search_Bar" layoutX="183.0" minHeight="49.0" prefHeight="49.0" prefWidth="1075.0" promptText="Sök bland varor och erbjudanden " styleClass="search_bar" stylesheets="@style.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </TextField>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="202.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/Sök2.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="721.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="back_Button" contentDisplay="CENTER" layoutX="63.0" layoutY="14.0" mnemonicParsing="false" onAction="#to_main_page" prefHeight="55.0" prefWidth="200.0" styleClass="root" stylesheets="@style.css" text="Tillbaka">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="32.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="92.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/arrow_backward.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="721.0" prefWidth="1149.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="38.0" layoutY="32.0" styleClass="root" stylesheets="@style.css" text="Dina Uppgifter">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="355.0" prefHeight="300.0" prefWidth="876.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="user_Data" />
+                        <String fx:value="summary" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="72.0" layoutY="63.0" />
+                        <TextField fx:id="new_account_name" layoutX="31.0" layoutY="79.0" prefHeight="50.0" prefWidth="350.0" styleClass="user_Data_Fields" />
+                        <TextField fx:id="new_account_number" layoutX="31.0" layoutY="199.0" prefHeight="50.0" prefWidth="350.0" styleClass="user_Data_Fields" />
+                        <TextField fx:id="new_account_address" layoutX="448.0" layoutY="79.0" prefHeight="50.0" prefWidth="350.0" styleClass="user_Data_Fields" />
+                        <Label layoutX="31.0" layoutY="48.0" text="Namn">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="169.0" text="Telefonnummer">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="448.0" layoutY="48.0" text="Adress">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Button id="shopping_Cart_Continue" layoutX="532.0" layoutY="184.0" mnemonicParsing="false" onAction="#save_account" prefHeight="60.0" prefWidth="258.0" text="Spara uppgifter" />
+                     </children>
+                  </Pane>
+                  <Label fx:id="save_account_confirmation" layoutX="185.0" layoutY="686.0" styleClass="root" stylesheets="@style.css" text="Dina uppgifter är nu sparade!" visible="false">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="303.0" styleClass="root" text="Spara/Ändra Uppgifter">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="14.0" layoutY="83.0" prefHeight="186.0" prefWidth="1019.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="user_Data" />
+                        <String fx:value="summary" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="25.0" layoutY="33.0" text="Namn:">
+                           <font>
+                              <Font size="50.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="117.0" text="Telefonnummer:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Label layoutX="541.0" layoutY="33.0" text="Adress:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="user_Data_Headers" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="account_name_label" layoutX="103.0" layoutY="33.0">
+                           <styleClass>
+                              <String fx:value="user_Data_Headers" />
+                              <String fx:value="user_data" />
+                              <String fx:value="root" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="account_number_label" layoutX="202.0" layoutY="117.0">
+                           <styleClass>
+                              <String fx:value="user_Data_Headers" />
+                              <String fx:value="user_data" />
+                              <String fx:value="root" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="account_address_label" layoutX="625.0" layoutY="33.0">
+                           <styleClass>
+                              <String fx:value="user_Data_Headers" />
+                              <String fx:value="user_data" />
+                              <String fx:value="root" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <Pane prefHeight="0.0" prefWidth="1440.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <Pane prefHeight="721.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

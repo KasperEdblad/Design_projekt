@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1080.0" maxWidth="1440.0" minHeight="700.0" minWidth="1000.0" prefHeight="1080.0" prefWidth="1440.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.AddressBookController">
+    <children>
+        <BorderPane prefHeight="1080.0" prefWidth="1440.0">
+            <top>
+                <Pane prefHeight="159.0" prefWidth="1440.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane id="NavBar_Background" prefHeight="67.0" prefWidth="1440.0" styleClass="NavBar">
+                            <children>
+                                <Button layoutX="395.0" layoutY="20.0" mnemonicParsing="false" onAction="#to_main_page" styleClass="NavBar_buttons" text="Handla Online" />
+                                <Button contentDisplay="CENTER" layoutX="610.0" layoutY="20.0" mnemonicParsing="false" styleClass="NavBar_buttons" stylesheets="@style.css" text="Butiker och erbjudanden" />
+                                <Button layoutX="929.0" layoutY="20.0" mnemonicParsing="false" styleClass="NavBar_buttons" text="Recept" />
+                                <Pane id="NavBar_Mark" layoutX="402.0" layoutY="58.0" prefHeight="4.0" prefWidth="150.0" stylesheets="@style.css" />
+                                <Pane id="NavBar_Mark2" layoutX="612.0" layoutY="58.0" prefHeight="4.0" prefWidth="255.0" stylesheets="@style.css" />
+                                <Pane id="NavBar_Mark3" layoutX="932.0" layoutY="58.0" prefHeight="4.0" prefWidth="85.0" stylesheets="@style.css" />
+                                <ImageView fitHeight="53.0" fitWidth="130.0" layoutX="70.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@resources/iMatLogga.png" />
+                                    </image>
+                                </ImageView>
+                                <Button id="imat_Button" layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#to_main_page" prefHeight="59.0" prefWidth="124.0" styleClass="NavBar" stylesheets="@style.css">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button id="shoppingCart_Button" layoutX="1276.0" layoutY="11.0" mnemonicParsing="false" onAction="#to_shopping_cart" prefHeight="45.0" prefWidth="115.0" styleClass="NavBar" stylesheets="@style.css" text="Varukorg">
+                                    <padding>
+                                        <Insets left="28.0" />
+                                    </padding>
+                                </Button>
+                                <Button id="account_Button" layoutX="1157.0" layoutY="15.0" mnemonicParsing="false" onAction="#to_account" prefHeight="40.0" prefWidth="90.0" styleClass="NavBar" stylesheets="@style.css" text="Konto">
+                                    <padding>
+                                        <Insets left="28.0" />
+                                    </padding>
+                                </Button>
+                                <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="1165.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@resources/användare2.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1286.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@resources/varukorg2.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="28.0" layoutY="80.0" prefHeight="49.0" prefWidth="1440.0">
+                            <children>
+                                <TextField id="search_Bar" layoutX="308.0" minHeight="49.0" prefHeight="49.0" prefWidth="1075.0" promptText="Sök bland varor och erbjudanden " styleClass="search_bar" stylesheets="@style.css">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="50.0" />
+                                    </padding>
+                                </TextField>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="329.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@resources/Sök2.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <Pane prefHeight="0.0" prefWidth="1440.0" BorderPane.alignment="CENTER" />
+            </bottom>
+            <right>
+                <Pane prefHeight="721.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>
